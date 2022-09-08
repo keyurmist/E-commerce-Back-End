@@ -12,11 +12,11 @@ router.get("/", async (req, res) => {
       include: [
         {
           model: Category,
-          attributes: ["category_name"],
+          attributes: ["id", "category_name"],
         },
         {
           model: Tag,
-          attributes: ["tag_name"],
+          attributes: ["id", "tag_name"],
         },
       ],
     });
@@ -141,7 +141,7 @@ router.delete("/:id", async (req, res) => {
     if (deleteProduct) {
       res.json(deleteProduct);
     } else {
-      res.status(404).json({ message: "No product with this ID" });
+      res.status(404).json({ message: "Unable to delete" });
     }
   } catch (error) {
     res.status(500).json(error);
