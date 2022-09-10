@@ -15,6 +15,8 @@
 
 This project was designed to demonstrate the back end of an e-commerce site. It uses Express.js, sequelize and MySQL for its database.
 
+Walkthrough of mysql part: https://drive.google.com/file/d/11PPIGmQEOZzznX__RDz7_GPwvU0kMPBs/view
+
 ## Installation
 
 Please follow the instructions on how to install the application:
